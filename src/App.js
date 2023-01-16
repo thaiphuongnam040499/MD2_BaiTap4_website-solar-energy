@@ -1,23 +1,43 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Navbar from './components/Navbar';
+import Carousel from './components/Carousel';
+import AboutStart from './components/AboutStart';
+import ServiceStart from './components/ServiceStart';
+import TeamStart from './components/TeamStart';
+import FaqsStart from './components/FaqsStart';
+import ContactStart from './components/ContactStart';
+import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+  {/* Navbar Start */}
+  <Navbar/>
+  {/* Navbar End */}
+  {/* Carousel Start */}
+  <Carousel/>
+  {/* Carousel End */}
+  {/* About Start */}
+  <AboutStart/>
+  {/* About End */}
+  {/* Service Start */}
+ <ServiceStart/>
+  {/* Service End */}
+  {/* Team Start */}
+ <TeamStart/>
+  {/* Team End */}
+  {/* FAQs Start */}
+  <FaqsStart/>
+  {/* FAQs End */}
+  {/* Contact Start */}
+  <ContactStart/>
+  {/* Contact End */}
+  {/* Footer Start */}
+  <Footer/>
+  {/* Footer End */}
+</>
+
     </div>
   );
 }
